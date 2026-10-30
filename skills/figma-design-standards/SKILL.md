@@ -5,13 +5,7 @@ description: Mandatory implementation standards for any Figma design creation or
 
 # Figma Design Standards
 
-Standards version: `2`.
-
-## Application
-
-Every role creating or changing Figma design nodes must read and apply these standards, including foundation previews, repairs, migrations, and scoped edits. This is a shared rule set, not an additional design phase or permission to modify unrelated work. `figma-designer` implements; `figma-structure-validation` verifies the actual structure; visual reviewers inspect rendered results.
-
-The identity manager owns identity values and reusable treatment rules. The director owns composition. Do not resolve an implementation limitation by silently changing the adopted identity.
+Standards version: `2`. Apply [Brix](../../AGENT.md) inspection/documentation policies. These are criteria for the changed scope and direct dependencies, not extra phases or runtime enforcement. Identity owns values; the director owns composition; the designer writes nodes.
 
 ## Rules
 
@@ -32,16 +26,8 @@ The identity manager owns identity values and reusable treatment rules. The dire
 | FDS-13 | Organize only actual content with clear pages and Auto Layout content Frames. | Follow `figma-file-organization`. Confirm nonempty created destinations, meaningful product/role names, actual Frame layout settings, nested screen integrity, and recoverable authorized Trash moves. Do not apply Frame layout properties to a Page or reorganize unrelated legacy pages. |
 | FDS-14 | Build new designs in their intended parents from the outset. | Verify creation/attachment order and parent IDs before content population. No completed design built outside then moved into a wrapper. Empty-node API initialization may attach immediately before design; scoped moves of existing content are separate operations. Final hierarchy alone cannot prove creation order. |
 
-## Applicability and Exceptions
+## Exceptions and acceptance
 
-Assess each rule within the requested change and its affected dependencies. Distinguish `not-applicable` from `not-reviewed`. Do not expand a label edit into an unsolicited whole-file refactor.
+Assess only applicable rules. Record justified exceptions once with rule, scope, reason, evidence, tradeoff and authority. Routine justified choices need no new approval. Exceptions cannot hide unavailable checks, waive real visual evidence or silently change adopted identity.
 
-An exception records rule ID, node/scope, reason, evidence, tradeoff, and authority from the user's request or established project constraints. Routine justified implementation choices do not require fresh user approval. Exceptions cannot invent evidence, hide an unsupported required check, waive actual visual review, or contradict an explicit user requirement. A missing tool capability is a blocker or unreviewed item, not an exception that passes.
-
-The designer proposes exceptions; the structural validator checks their applicability and the visual reviewer checks visible consequences. Identity-changing exceptions return to the identity manager. Record accepted exceptions visibly in the final report.
-
-## Completion Gate
-
-Every mutation task needs a current scoped structural report from `figma-structure-validation` and the applicable visual review. Foundation previews require the identity manager's visual review; final screens require assigned fidelity validation; simple edits may retain planned in-task visual checks. The same agent may execute roles sequentially; do not claim independent review in that case.
-
-Structural pass requires actual supported evidence for every required applicable check, with justified exceptions documented. Visual pass never substitutes for structural pass and vice versa. Automated interception and integration-specific enforcement remain deferred under [the integration contract](../../FIGMA_INTEGRATION.md).
+Evaluate structure and [visual release criteria](references/visual-release-checks.md) within the same shared before/after passes. Store both outcomes in one canonical record, with separate fields rather than mandatory separate reports. Each required applicable check needs actual evidence or a legitimate exception. Reuse current available results across roles and adoption. Missing evidence is unverified; observed failure needs scoped repair. Neither structural nor visual pass alone substitutes for the other.

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "impeccable",
+    "repository": "https://github.com/pbakaus/impeccable",
+    "commit": "02523aec3e4c4580102d996d1b6a71fbe062e03f",
+    "license_file": "skills/design-reference-library/references/impeccable/LICENSE",
+    "usage": "UI/UX reference only; application-code instructions do not apply"
+  },
+  {
+    "name": "ui-ux-pro-max",
+    "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "commit": "28b3b8dee8c976df4fa3e94aed4e092ad43fcb03",
+    "license_file": "skills/design-reference-library/references/ui-ux-pro-max/LICENSE",
+    "usage": "UI/UX reference only; application-code instructions do not apply"
+  }
+]

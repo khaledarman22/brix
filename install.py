@@ -1,31 +1,36 @@
 #!/usr/bin/env python3
 """Install BRIX into one explicitly selected project; never overwrite user files."""
 import argparse
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
 def payloads(target):
-    entry_root = target / '.agents/skills/brix'
-    bundle = entry_root / 'references/bundle'
     output = {}
-    for folder in ['skills', 'agents']:
-        for source in (ROOT / folder).rglob('*'):
+    sources = json.loads((ROOT / 'sources.json').read_text())
+    for entry in sources:
+        name = entry['name']
+        if not name or Path(name).name != name or name in ('.', '..'):
+            raise ValueError(f'Invalid skill name: {name}')
+        skill = ROOT / 'skills' / name
+        if not (skill / 'SKILL.md').is_file():
+            raise ValueError(f'Missing skill entry point: {name}')
+        for source in sorted(skill.rglob('*')):
+            if source.is_symlink():
+                raise ValueError(f'Symlink in skill: {source}')
             if source.is_file() and '__pycache__' not in source.parts and source.suffix != '.pyc':
-                output[bundle / source.relative_to(ROOT)] = source.read_bytes()
-    for name in ['AGENT.md', 'sources.json']:
-        output[bundle / name] = (ROOT / name).read_bytes()
-    output[entry_root / 'SKILL.md'] = (
-        '---\nname: brix\ndescription: Execute UI/UX research and Figma design tasks with the Brix skill suite.\n---\n\n'
-        '# Brix\n\nRead [the canonical Brix instructions](references/bundle/AGENT.md) before execution. '
-        'Resolve all bundle paths from `references/bundle/` next to this skill. '
-        'Load relevant designated skills from that bundle. Keep work artifacts in the calling project.\n').encode()
-    entry = ('For Brix UI/UX tasks, load `.agents/skills/brix/SKILL.md` and follow its canonical bundle instructions.\n')
-    output[target / 'AGENTS.md'] = entry.encode()
-    output[target / 'GEMINI.md'] = entry.encode()
-    output[target / '.opencode/agents/brix.md'] = (
-        '---\ndescription: Brix UI/UX and Figma orchestrator\nmode: primary\n---\n\n'
-        + entry).encode()
+                output[target / '.agents/skills' / name / source.relative_to(skill)] = source.read_bytes()
+        if entry.get('license_file', '').startswith('licenses/'):
+            output[target / entry['license_file']] = (ROOT / entry['license_file']).read_bytes()
+    instructions = (ROOT / 'AGENTS.md').read_text().replace(
+        '`skills/', '`.agents/skills/')
+    output[target / 'AGENTS.md'] = instructions.encode()
+    output[target / 'agents/brix.md'] = (ROOT / 'agents/brix.md').read_bytes()
+    for entry in sources:
+        if entry.get('license_file', '').startswith('skills/'):
+            entry['license_file'] = '.agents/' + entry['license_file']
+    output[target / 'sources.json'] = (json.dumps(sources, indent=2) + '\n').encode()
     return output
 
 def main():

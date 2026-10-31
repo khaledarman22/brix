@@ -1,0 +1,26 @@
+{
+  "version_id": "2468c5fd685baa5b23de834074fa9a46495f8361aaf423d8cad43aa47b0aa298",
+  "verdict": "strong",
+  "scores": {
+    "layout": 4,
+    "typography": 5,
+    "spacing": 5,
+    "visual_clarity": 5
+  },
+  "strengths": [
+    "Large centered black wordmark on white, about 92% screen width. Strong hierarchy and generous negative space. Size requires reduction for detailed emblems; gallery watermark not product UI."
+  ],
+  "weaknesses": [
+    "Large wordmark scale does not transfer directly to detailed emblems"
+  ],
+  "useful_regions": [
+    "centered brand composition",
+    "negative space"
+  ],
+  "avoid_regions": [
+    "source app branding",
+    "gallery watermark"
+  ],
+  "evidence": "Downloaded original public screenshot viewed directly using view_image",
+  "inspected_at": "2026-10-31T17:03:16.721757+00:00"
+}

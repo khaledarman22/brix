@@ -1,0 +1,162 @@
+{
+  "task_id": "task-003",
+  "part_id": "onboarding",
+  "status": "figma_complete_state_sync_pending",
+  "authoritative_state_sync": "External Lavender .brix remains unsynced; no writes attempted. This is a local recovery record, not a replacement design project.",
+  "brief": {
+    "product": "Lavender",
+    "platform": "mobile-app",
+    "viewport": "393x852",
+    "language": "Arabic RTL",
+    "identity": "lavender-identity existing fonts/tokens",
+    "screens": [
+      {
+        "id": "onboarding-discover",
+        "title": "باقة لكل مناسبة",
+        "copy": "اختار من الباقات الجاهزة اللي تناسب ذوقك."
+      },
+      {
+        "id": "onboarding-create",
+        "title": "صمّم باقتك بنفسك",
+        "copy": "اختار الورد والتغليف والشريطة، واجمعهم على ذوقك."
+      },
+      {
+        "id": "onboarding-personalize",
+        "title": "لمسة منك تكمّل الهدية",
+        "copy": "أضف كارت برسالتك وخلي الباقة تعبّر عنك."
+      }
+    ],
+    "controls": "Skip and Next, final Start; 3 progress positions, no forced permissions or signup"
+  },
+  "references": [
+    {
+      "id": "onboarding-scanany",
+      "version_id": "1c0e89b68581e5d0b6177cdc6625b1367096a00a9e9c357900b07a03c8e03d03",
+      "asset_path": "artifacts/lavender-onboarding/scanany.webp",
+      "source_url": "https://screensdesign.com/apps/scanany-pdf-scanner-app/?vs=36337",
+      "platform": "mobile-app",
+      "source_kind": "live-product",
+      "quality": "strong",
+      "fit_scores": {
+        "task": 5,
+        "hierarchy": 5,
+        "clarity": 4,
+        "platform": 5,
+        "identity": 5
+      },
+      "take": "Image first, concise centered explanation below, clear bottom action and 3-step progress. Adapt to original flower imagery, Lavender colors, Arabic RTL, Skip.",
+      "caveat": "Image in capture is soft; original copy long. Do not copy scanner illustration or blue brand.",
+      "evidence": "Original public screenshot directly inspected with view_image",
+      "inspected_at": "2026-10-31T17:06:35.864407+00:00"
+    },
+    {
+      "id": "onboarding-budget",
+      "version_id": "7436769ae328636c03a25dcef75452539f31c295558b462c81837f66c8cf006c",
+      "asset_path": "artifacts/lavender-onboarding/budget.webp",
+      "source_url": "https://screensdesign.com/apps/budget-app-spending-tracker/?vs=34598",
+      "platform": "mobile-app",
+      "source_kind": "live-product",
+      "quality": "mixed",
+      "fit_scores": {
+        "task": 4,
+        "hierarchy": 4,
+        "clarity": 4,
+        "platform": 5,
+        "identity": 4
+      },
+      "take": "Short headline first, large centered illustration, floating supporting elements, pill CTA. Adapt flowers/wrapping/card illustrations and Lavender tokens.",
+      "caveat": "Seven progress dots and visual decorations are excessive for this 3-step scope; shorten flow and restrain decoration.",
+      "evidence": "Original public screenshot directly inspected with view_image",
+      "inspected_at": "2026-10-31T17:06:35.864407+00:00"
+    }
+  ],
+  "search_history": {
+    "source": "https://screensdesign.com/explore/screens/onboarding/",
+    "filter": "mobile-app onboarding light",
+    "visited": true,
+    "pagination_mode": "none",
+    "continuation": null,
+    "exhausted": false,
+    "coverage_satisfied": true,
+    "reason": "Two visually distinct compositions cover introductory 3-step walkthrough"
+  },
+  "pending_action": null,
+  "waiting_for": null,
+  "next_action": "Await user feedback; do not replay creation. External state sync only if separately authorized.",
+  "figma": {
+    "file_key": "bTumwYXfXVU8xEuXT27tEW",
+    "board_node": "1:548",
+    "imageA": "1:551",
+    "imageB": "1:555",
+    "noteA": "1:552",
+    "noteB": "1:556",
+    "section": "1:565",
+    "screens": [
+      "1:566",
+      "1:585",
+      "1:605"
+    ],
+    "primary_button_component": "1:561",
+    "text_navigation_component": "1:563",
+    "cta": [
+      "1:578",
+      "1:598",
+      "1:618"
+    ],
+    "skip": [
+      "1:568",
+      "1:587",
+      "1:607"
+    ],
+    "back": [
+      "1:590",
+      "1:610"
+    ]
+  },
+  "last_confirmed": {
+    "result": "Three 393x852 native editable onboarding screens visually inspected in combined final export after correcting instance sizing. Titles/copy legible, artwork complete, shared controls consistent, 3 RTL progress positions. Source B selected and applied, original identity preserved.",
+    "combined_png": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-onboarding/final/onboarding-التعريف-بالتطبيق.png",
+    "individual_pngs": [
+      "/Users/khaled/Desktop/programming/brix/artifacts/lavender-onboarding/final/onboarding-01-باقة-لكل-مناسبة.png",
+      "/Users/khaled/Desktop/programming/brix/artifacts/lavender-onboarding/final/onboarding-02-صمّم-باقتك-بنفسك.png",
+      "/Users/khaled/Desktop/programming/brix/artifacts/lavender-onboarding/final/onboarding-03-لمسة-منك-تكمّل-الهدية.png"
+    ],
+    "button_dimensions": "248x52 CTA, 64x44 Skip/Previous confirmed in get_node",
+    "board_selection": "B note 1:556 now records exact user choice b and created nodes"
+  },
+  "selection": {
+    "user_quote": "b",
+    "reference_id": "onboarding-budget",
+    "version_id": "7436769ae328636c03a25dcef75452539f31c295558b462c81837f66c8cf006c",
+    "board_node": "1:548",
+    "take": "Headline first, centered illustration with small detached accents, pill CTA, bottom progress"
+  },
+  "visual_decisions": {
+    "source_observation": "B places title/subtitle at top, illustrative group in middle, pill CTA low, progress at bottom.",
+    "adaptation": "Lavender cream/plum palette, El Messiri heading, IBM Plex Sans Arabic body; botanical art replaces budget cards; 3 dots right-to-left instead of 7; short two-line maximum headings; skip/back 44px targets; pill CTA 52px.",
+    "geometry": "393x852; 24px side inset; title+copy top block; centered ~320x320 artwork; controls aligned identically across three screens.",
+    "illustration": "Generate isolated botanical assets, never full UI. Frames/text/controls remain native."
+  },
+  "observed_issue": "Initial screenshot showed collapsed pill CTAs and undersized navigation hit areas. Fix actual dimensions before final export.",
+  "prototype": {
+    "flow": "Lavender · أول زيارة",
+    "start": "1:546",
+    "confirmed_links": 9,
+    "routes": [
+      "Splash after 1200ms → 1:566",
+      "1:578 → 1:585",
+      "1:598 → 1:605",
+      "1:618 → Home 1:227",
+      "Skip 1:568/1:587/1:607 → Home",
+      "Previous 1:590 → 1:566",
+      "Previous 1:610 → 1:585"
+    ],
+    "verification": "Prototype definitions read back; navigation not manually exercised in presentation runtime."
+  },
+  "integration_check": "Native screens use existing Lavender cream/plum tokens, El Messiri headings, IBM Plex Sans Arabic body, dimensions 393x852 match Splash. Existing Home/promo visuals unchanged; added Splash route only after read confirmed no prior reaction. All generated imagery actual isolated assets, no flattened screen image.",
+  "limitations": [
+    "Illustrations generated for onboarding, not verified product photography.",
+    "Figma prototype wiring confirmed by readback, not a running application or manual presentation test.",
+    "External design-project state remains unsynced by prior approval boundary; this permitted local recovery record retains all current evidence."
+  ]
+}

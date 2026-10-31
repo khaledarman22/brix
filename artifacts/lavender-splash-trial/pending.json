@@ -1,0 +1,10 @@
+{
+  "status": "in_progress",
+  "last_confirmed": "No existing splash in live file or saved choices. Two actual app launch screenshots visually inspected, Zara and WeMoms; no cached splash coverage.",
+  "pending_action": {
+    "id": "lavender-splash-board-01",
+    "operation": "Create References \u2013 Splash board only; two real screenshots and evaluation notes",
+    "file": "bTumwYXfXVU8xEuXT27tEW"
+  },
+  "next_action": "Present verified board and wait for explicit reference selection"
+}

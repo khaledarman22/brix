@@ -1,0 +1,20 @@
+{
+  "status": "in_progress",
+  "reopen_reason": "User authorized visual-execution trial on promo carousel only; all unrelated Home content preserved.",
+  "request": "تمام جرّب التعديلات الجديدة على قسم العروض في Lavender ووريني الفرق قبل وبعد",
+  "last_confirmed": {
+    "baseline": "Figma 1:276 and 1:227 screenshots directly inspected; Noon A image 1:45 directly inspected",
+    "evidence_root": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-promo-trial/before"
+  },
+  "visual_decisions": {
+    "reference_id": "ref-5e4543fbe911cddc7d524671",
+    "version": "a1583aefde1cff0c4eaae258229412fa855a7568b850a3b4670a9c2ce4a97926",
+    "scope": "promo 1:276 only",
+    "measured_baseline": "393x188 section; central banner 345x172; current copy 150px wide; CTA 36px tall",
+    "composition": "Preserve peeking carousel + dots and right-to-left reading. Floral product on left ~48%; editable right-aligned copy ~46%. Promote existing 20% offer to focal headline; keep seasonal context smaller and CTA 44px tall. Preserve Plum/El Messiri/IBM Plex Sans Arabic. No Noon brand imagery.",
+    "image": "Generate IMG-001 from existing prompt, calm right negative space; generated campaign illustration not verified stock photo."
+  },
+  "next_action": "Generate IMG-001, inspect it, apply scoped promo edit and compare before/after",
+  "pending_action": null,
+  "waiting_for": null
+}

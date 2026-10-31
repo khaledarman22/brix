@@ -1,0 +1,10 @@
+{
+  "source": "https://screensdesign.com/explore/screens/splash/",
+  "query": "mobile app launch splash",
+  "filters": {
+    "platform": "mobile-app",
+    "screen": "splash",
+    "theme": "light"
+  },
+  "public_source": true
+}

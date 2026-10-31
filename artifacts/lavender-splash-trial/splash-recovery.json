@@ -1,0 +1,35 @@
+{
+  "task": "task-002",
+  "part": "splash",
+  "status": "figma_complete_state_sync_pending",
+  "authoritative_state_sync": "blocked by automatic approval review; /Users/khaled/Desktop/brix-mo-v2 not written",
+  "selection": {
+    "user_quote": "a",
+    "reference_id": "ref-95e9c41cacc188b611cc0d33",
+    "version_id": "2468c5fd685baa5b23de834074fa9a46495f8361aaf423d8cad43aa47b0aa298",
+    "board": "1:533"
+  },
+  "visual_decisions": {
+    "baseline": "No existing splash verified",
+    "source": "Actual Zara screenshot viewed directly; large central brand ~92% width",
+    "adaptation": "Existing original Lavender square emblem 280px (~71% width) centered in 393x852 native cream frame; stronger detail balance than matching wide wordmark scale; no CTA or onboarding",
+    "asset": "Original transparent PNG inspected directly and retained unchanged; raster brand image, editable native placement/frame"
+  },
+  "pending_action": null,
+  "next_action": "Ask explicit permission to sync task-002/splash choice and completion to /Users/khaled/Desktop/brix-mo-v2/.brix/state.json and .brix/references/catalog.json; do not replay Figma build.",
+  "last_confirmed": {
+    "frame": "1:546",
+    "logo": "1:547",
+    "file": "bTumwYXfXVU8xEuXT27tEW",
+    "page": "App",
+    "frame_bounds": "393x852 at 513,0; same viewport width as Home",
+    "result": "Current rendered splash directly inspected. Single centered original emblem, warm cream token background; no clipped brand detail. Existing Home and promo unchanged.",
+    "final_png": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-splash-trial/final/splash-البداية.png",
+    "reference_selection_label": "A board text 1:539 marked selected a, applied to 1:546; confirmed edit success"
+  },
+  "integration_check": "Same original IMG-000 brand asset and color/bg/page as existing Lavender app. Native auto-layout frame and image placement are editable. No additional product section changes.",
+  "limitations": [
+    "Logo is original raster PNG, not vector lettering.",
+    "Static design; no launch transition or runtime behavior implemented."
+  ]
+}

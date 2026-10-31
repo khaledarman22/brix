@@ -1,0 +1,10 @@
+{
+  "request": "\u0644\u0627 \u0627\u0639\u0645\u0644 \u0627\u0633\u0628\u0644\u0627\u0634 \u2014 Lavender app launch splash, same identity; no onboarding",
+  "parts": [
+    {
+      "id": "splash",
+      "title": "Lavender launch splash",
+      "scope": "Scoped splash reference choice, then editable native splash in existing Lavender Figma file"
+    }
+  ]
+}

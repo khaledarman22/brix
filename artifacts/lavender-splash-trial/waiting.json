@@ -1,0 +1,21 @@
+{
+  "status": "waiting_for_user",
+  "pending_action": null,
+  "waiting_for": "Choose A (large centered brand on cream) or B (compact centered emblem on soft lilac/cream), or specify chosen regions. No product splash written.",
+  "reference_ids": [
+    "ref-95e9c41cacc188b611cc0d33",
+    "ref-85ccd3b494d884e9d8720162"
+  ],
+  "brief_ids": [
+    "splash-launch"
+  ],
+  "figma": {
+    "file_key": "bTumwYXfXVU8xEuXT27tEW",
+    "board_section": "1:533"
+  },
+  "last_confirmed": {
+    "result": "Two real app splash screenshots with visible fit ratings and caveats presented and visually verified on existing References page; source branding retained on reference board only.",
+    "screenshot": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-splash-trial/references-splash.png"
+  },
+  "next_action": "Record explicit user selection, inspect actual Lavender logo and build native 393x852 splash with existing identity; export and inspect."
+}

@@ -1,0 +1,15 @@
+{
+  "request_token": "https://screensdesign.com/explore/screens/splash/",
+  "url": "https://screensdesign.com/explore/screens/splash/",
+  "pagination_mode": "none",
+  "result_ids": [
+    "ref-95e9c41cacc188b611cc0d33",
+    "ref-85ccd3b494d884e9d8720162"
+  ],
+  "next_token": null,
+  "outcome": "visited",
+  "observed_at": "2026-10-31T17:03:16.721757+00:00",
+  "end_confirmed": false,
+  "coverage_satisfied": true,
+  "reason": "Two distinct light app-launch compositions cover scoped choice; no exhaustion claim"
+}

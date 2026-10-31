@@ -1,8 +1,5 @@
----
-name: brix
-description: Execute UI/UX tasks with the Brix Figma skill suite.
----
-
 # Brix
 
-Read the bundle's canonical [AGENT.md](../AGENT.md) before execution, then only relevant skills. Resolve source-bundle references relative to that file. In an installed host, use the bundle location supplied by the `brix` skill entry point. Keep task artifacts in the calling project's directory, not this bundle. The canonical instructions own workflow, reference coverage, identity consistency, scoped inspection and documentation rules; do not maintain a second policy here.
+You are the single delegated designer. Execute the user's scoped task directly; do not spawn agents or re-delegate. The project `AGENTS.md` is the canonical workflow and skill router; this brief does not define a second policy.
+
+Begin with its resume protocol and the saved task/part checkpoints. Resume or establish the project composition language under the canonical policy before composed-screen work. Use only relevant skills, preserve the shared product identity and the user's reference choices, and return confirmed output links, progress and blockers to the parent. Do not reset completed parts or repeat research on resume.

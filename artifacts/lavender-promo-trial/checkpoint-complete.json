@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "pending_action": null,
+  "waiting_for": null,
+  "last_confirmed": {
+    "result": "Promo 1:276 updated in place, generated image applied to central and peeking banner slots; current exported section and full Home visually inspected. No overlapping/clipped text observed. Original section 393x188 and Home 393x1675 retained; unaffected sections preserved.",
+    "changed_ids": [
+      "1:279",
+      "1:282",
+      "1:292",
+      "1:284",
+      "1:285",
+      "1:286",
+      "1:287",
+      "1:532"
+    ],
+    "before": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-promo-trial/before/promo-carousel.png",
+    "after": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-promo-trial/after/promo-carousel.png",
+    "context_before": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-promo-trial/before/home-الرئيسية.png",
+    "context_after": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-promo-trial/after/home-الرئيسية.png",
+    "generated_asset": "/Users/khaled/Desktop/brix-mo-v2/deliverables/visual-trial/task-001/IMG-001.png",
+    "prompt": "/Users/khaled/Desktop/brix-mo-v2/deliverables/visual-trial/task-001/IMG-001-prompt.md"
+  },
+  "observed_improvements": [
+    "Replaced gray placeholder with actual generated floral image, distinct image-left/copy-right composition",
+    "Existing 20% offer promoted from 13px secondary line to 30px headline, seasonal collection context retained",
+    "CTA increased from 36 to 44px high; all copy and button editable, existing icon instance and color variables retained"
+  ],
+  "limitations": [
+    "Generated imagery is illustrative, not a verified stock/catalog photograph",
+    "Other Home image placeholders outside this trial remain",
+    "Static Figma visual review does not prove runtime swipe/button behavior",
+    "This single trial supports asset and hierarchy improvements; it does not isolate workflow causal impact or prove tool limitations"
+  ],
+  "next_action": "Await user feedback on scoped before/after trial; no automatic rollout"
+}

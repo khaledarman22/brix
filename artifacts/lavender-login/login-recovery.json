@@ -1,0 +1,69 @@
+{
+  "task_id": "task-004",
+  "part_id": "login",
+  "status": "figma_complete_state_sync_pending",
+  "external_state_unsynced": true,
+  "selected_by": "brix",
+  "user_quote": null,
+  "source_url": "https://screensdesign.com/apps/shein-shopping-online/?vs=57390",
+  "version": "accd1f141cab57aab0913f721ef23725280699d1eefbcf1f5917b2caafc7650d",
+  "rationale": "Brand-first retail app sign-in, persistent input label and prominent primary action fits Lavender. Yik Yak inspected but keyboard-first less appropriate for resting branded entry.",
+  "take": [
+    "centered brand above form",
+    "persistent field label",
+    "strong full-width CTA"
+  ],
+  "avoid": [
+    "offers without evidence",
+    "social providers",
+    "source branding"
+  ],
+  "ratings": {
+    "task_fit": 5,
+    "hierarchy": 4,
+    "clarity": 4,
+    "platform_rtl": 4,
+    "identity": 5
+  },
+  "assumption": "Phone number + verification code; product brief does not define authentication. Static proposal, no backend claimed. Egyptian local 11-digit input incl leading zero; no duplicate +20 prefix.",
+  "visual_decisions": "Cream canvas; 176px original emblem centered; right aligned heading and field; grouped input/helper; full-width plum pill CTA; guest path secondary. 393x852; keyboard hidden resting state.",
+  "search": {
+    "cache_queries": [
+      "login",
+      "sign"
+    ],
+    "url": "https://screensdesign.com/explore/screens/phone-entry/",
+    "coverage_satisfied": true,
+    "pagination": "No explicit next URL observed in static HTML; not claimed exhausted"
+  },
+  "pending_action": null,
+  "waiting_for": null,
+  "last_confirmed": {
+    "screen": "1:644",
+    "reference_board": "1:637",
+    "visual_review": "Actual export inspected; native heading/form/CTA legible, no overlap, logo clear, RTL body and LTR phone verified",
+    "final_png": "/Users/khaled/Desktop/programming/brix/artifacts/lavender-login/final/login-تسجيل-الدخول.png",
+    "prototype": {
+      "guest": "1:659 click -> 1:227 Home, verified native node readback",
+      "cta": "reused pressed state; no fake successful sign-in navigation",
+      "runtime_tested": false
+    }
+  },
+  "next_action": "User review; external project state sync still requires separate authorization.",
+  "figma": {
+    "file": "bTumwYXfXVU8xEuXT27tEW",
+    "screen": "1:644",
+    "board": "1:637"
+  },
+  "limitations": [
+    "Static Figma proposal; phone/SMS auth method assumed, not implemented backend",
+    "No OTP or error/loading flow screens requested or created",
+    "External .brix state remains unsynced; local recovery authoritative for this task"
+  ],
+  "integration_check": {
+    "fonts": "El Messiri Bold28 and IBM Plex Sans Arabic Regular/Medium verified in native node readback",
+    "identity": "Original Lavender emblem; existing cream/plum/text/radius tokens; reused primary button instance with pressed variant",
+    "viewport": "393x852, matching splash/onboarding",
+    "unrelated_flow": "Existing splash/onboarding/Home untouched"
+  }
+}
